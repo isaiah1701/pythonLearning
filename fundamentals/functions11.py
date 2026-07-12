@@ -15,3 +15,10 @@ def is_even(num):
 
 print (is_even(5))
 print (is_even(4))
+
+
+def average(numbers):
+    return sum(numbers) / len(numbers)
+numbers= [5,4,3,9]
+print ( average(numbers))
+      
