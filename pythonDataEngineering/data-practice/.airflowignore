@@ -1,0 +1,3 @@
+# Runtime files and the virtual environment are not DAG sources.
+.airflow/
+.venv/

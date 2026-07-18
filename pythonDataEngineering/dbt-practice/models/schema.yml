@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: Cleaned order data from the raw orders seed.
+    columns:
+      - name: order_id
+        description: Unique identifier for each order.
+        data_tests:
+          - not_null
+          - unique
+      - name: customer_name
+        data_tests:
+          - not_null
+      - name: product
+        data_tests:
+          - not_null
+      - name: quantity
+        data_tests:
+          - not_null
+      - name: price
+        data_tests:
+          - not_null
+      - name: total_amount
+        data_tests:
+          - not_null
+
+  - name: customer_order_summary
+    description: One row per customer with order and spending totals.
+    columns:
+      - name: customer_name
+        data_tests:
+          - not_null
+          - unique
+      - name: number_of_orders
+        data_tests:
+          - not_null
+      - name: total_items
+        data_tests:
+          - not_null
+      - name: total_spent
+        data_tests:
+          - not_null

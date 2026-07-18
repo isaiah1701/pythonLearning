@@ -1,0 +1,15 @@
+[project]
+name = "clean-feature-dataset-exercise"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.1",
+    "pandas>=3.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.22",
+]
